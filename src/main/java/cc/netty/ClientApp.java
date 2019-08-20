@@ -11,9 +11,9 @@ public class ClientApp
 	public static void main(String[] args) throws InterruptedException
 	{
 		String host = "127.0.0.1";
-//		int port = 8082;
-//		run(new TimeClient(), host, port);
-//		run(new TimeClient2(), host, port);
+		int port = 8082;
+		run(new TimeClient(), host, port);
+		run(new TimeClient2(), host, port);
 		int port3 = 8083;
 		run(new TimeClient3(), host, port3);
 	}
@@ -29,7 +29,7 @@ public class ClientApp
 				{
 					client.run(host, port);
 					cur = 0;
-					Thread.sleep(1000 * 3);
+					Thread.sleep(1000 * 5);
 				}
 				catch (Exception e)
 				{

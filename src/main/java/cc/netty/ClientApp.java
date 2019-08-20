@@ -29,7 +29,7 @@ public class ClientApp
 				{
 					client.run(host, port);
 					cur = 0;
-					Thread.sleep(1000 * 5);
+					Thread.sleep(1000 * 2);
 				}
 				catch (Exception e)
 				{

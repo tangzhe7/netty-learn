@@ -8,7 +8,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.ReferenceCountUtil;
 import io.netty.util.concurrent.Future;
-import io.netty.util.internal.ReflectionUtil;
 
 /**
  * echo 客户端发送什么,回什么
@@ -41,6 +40,7 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter
 			System.out.println("echo ans " + futures.isSuccess());
 			System.out.flush();
 		});
+		
 	}
 
 }
